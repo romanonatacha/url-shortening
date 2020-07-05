@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.input {
+    text-align: center;
+    form {
+        padding-bottom: $gutter * 4;
+    }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $dark-violet;
+        padding: ($gutter * 6) 0;
+        margin: ($gutter * 4) 0;
+        border-radius: $gutter;
+
+        &_input {
+            border-radius: $gutter / 2;
+            font-size: 24px;
+            width: 70%;
+            margin: 0 auto;
+            background-color: $very-dark-violet;
+            color: white;
+            padding: $gutter * 2;
+            border: none;
+
+            &-error {
+                border: solid 1px $red;
+            }
+
+            &:focus {
+                border: 1px solid $gray;
+                outline: none;
+            }
+        }
+    }
+
+    &_error {
+        color: $red;
+        margin-bottom: -16px;
+        text-transform: lowercase;
+    }
+}

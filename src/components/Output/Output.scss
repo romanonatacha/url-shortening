@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.output {
+    background-color: $very-dark-blue;
+    margin: ($gutter * 4) 0;
+    padding: $gutter * 4;
+    display: flex;
+    justify-content: space-between;
+    border-radius: $gutter;
+
+    &_link {
+        color: $gray;
+    }
+
+    &_result {
+        color: $cyan;
+    }
+}

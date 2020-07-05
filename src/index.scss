@@ -1,0 +1,28 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: $f-family;
+  font-weight: normal;
+  font-size: $f-size;
+  color: white;
+}
+
+.boxed {
+  max-width: $mobile;
+  margin: 0 auto;
+  padding: $gutter * 2;
+  @include for-tablet-portrait-up {
+    max-width: $desktop;
+    width: 70%;
+   }
+}

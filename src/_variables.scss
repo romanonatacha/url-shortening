@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+$mobile: 375px;
+$desktop: 1440px;
+
+// Colors
+
+// -- Primary
+$cyan: #23adad;
+$dark-violet: hsl(257, 27%, 26%);
+
+// -- Secondary
+$red: hsl(0, 87%, 67%);
+
+// -- Neutral
+$gray: hsl(0, 0%, 75%);
+$black: #131313;
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+// Typography
+
+$f-size: 18px;
+$f-family: 'Poppins', sans-serif;
+$logo-font: 'Squada One', 'sans-serif';
+$normal: 500;
+$bold: 700;
+
+
+// spacing
+$gutter: 8px;
+
+//mixins
+@mixin mobile-only {
+    @media (max-width: 400px) { @content; }
+  }
+@mixin tablet-mobile {
+    @media (max-width: 899px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }

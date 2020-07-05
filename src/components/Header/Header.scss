@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.header {
+    background-color: $very-dark-blue;
+    font-size: 28px;
+    &_logo {
+        font-family: $logo-font;
+        font-size: 38px;
+        margin-right: $gutter * 2;
+    }
+}

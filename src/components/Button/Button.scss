@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.btn {
+    border: none;
+    border-radius: $gutter / 2;
+    font-weight: $bold;
+    text-transform: lowercase;
+    cursor: pointer;
+    padding: $gutter;
+    &-shorten {
+        width: 200px;
+        background-color: $cyan;
+        font-size: 20px;
+        color: white;
+
+        &:hover {
+            background-color: darken($cyan, 10%);
+        }
+    }
+    
+    &-copy {
+        color: $very-dark-violet;
+        margin-left: $gutter * 4;
+        width: 64px;
+        background-color: $gray;
+
+        &:hover {
+            background-color: lighten($gray, 10%);
+        }
+    }
+
+    &-copied {
+        background-color: $grayish-violet;
+    }
+
+    &-loading {
+        background-color: lighten($cyan, 30%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

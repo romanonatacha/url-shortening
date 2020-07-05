@@ -1,0 +1,25 @@
+@import '../../variables';
+
+footer {
+    background-color: $black;
+    color: $gray;
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        
+        div {
+            padding-left: $gutter * 2;
+
+            a {
+                span {
+                    font-weight: $bold;
+                }
+                &:hover {
+                    color: lighten($cyan, 40%);
+                }
+            }
+
+        }
+    }
+}
