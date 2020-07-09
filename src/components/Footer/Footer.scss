@@ -7,6 +7,16 @@ footer {
     .footer {
         display: flex;
         justify-content: flex-end;
+
+        @include tablet-mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+        .divider {
+            @include tablet-mobile {
+                display: none;
+            }
+        }
         
         div {
             padding-top: $gutter * 2;

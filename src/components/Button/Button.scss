@@ -20,9 +20,15 @@
     
     &-copy {
         color: $very-dark-violet;
-        margin-left: $gutter * 4;
-        width: 64px;
         background-color: $gray;
+        width: 100%;
+        margin-top: $gutter * 2;
+
+        @include for-tablet-landscape-up {
+            margin-top: 0;
+            margin-left: $gutter * 4;
+            width: 64px;
+        }
 
         &:hover {
             background-color: lighten($gray, 10%);

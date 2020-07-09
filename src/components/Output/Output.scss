@@ -4,15 +4,31 @@
     background-color: $very-dark-blue;
     margin: ($gutter * 4) 0;
     padding: $gutter * 4;
-    display: flex;
-    justify-content: space-between;
     border-radius: $gutter;
+    display: flex;
+    flex-direction: column;
+    
+    @include for-tablet-landscape-up {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
     &_link {
         color: $gray;
+        word-break: break-word;
+        margin-bottom: $gutter;
+
+        @include for-tablet-landscape-up {
+            margin-bottom: 0;
+        }
     }
 
     &_result {
         color: $cyan;
+        margin-top: $gutter;
+
+        @include for-tablet-landscape-up {
+            margin-top: 0;
+        }
     }
 }
