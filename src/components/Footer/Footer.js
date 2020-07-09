@@ -10,7 +10,7 @@ const Footer = () => {
                         developed by <span>natacha romano</span>
                     </a>
                 </div>
-                <div> | </div>
+                <div className="divider"> | </div>
                 <div>
                     <a href="https://trich.ai" target="_blank" rel="noopener noreferrer">
                         powered by <span>trich.ai</span>

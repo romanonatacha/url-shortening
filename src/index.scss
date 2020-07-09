@@ -9,12 +9,20 @@ a {
   text-decoration: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: $f-family;
   font-weight: normal;
-  font-size: $f-size;
   color: white;
+  font-size: $f-size-s;
+  
+  @include for-tablet-landscape-up {
+    font-size: $f-size;
+  }
 }
 
 .boxed {
